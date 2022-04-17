@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Column from './components/Column';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="trello-lemondev-master">
+      <nav className='navbar app'>App Bar</nav>
+      <nav className='navbar board'>Board Bar</nav>
+      <div className='board-columns'>
+        <Column />
+        <Column />
+        <Column />
+        <Column />
+        <Column />
+        <Column />
+        <Column />
+        <Column />
+        <Column />
+      </div>
     </div>
   );
 }
